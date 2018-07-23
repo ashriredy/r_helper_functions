@@ -1,4 +1,12 @@
 cbind_reverse = function(...){
   l = list(...)
-  cbind(l[[2]],l[[1]])
+  
+  for(i in length(l):1){
+    if(i==length(l)){
+      output = l[[i]]
+    }else{
+      output = cbind(output,l[[i]])
+    }
+  }
+  output
 }
