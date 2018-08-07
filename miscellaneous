@@ -1,0 +1,4 @@
+my_max  =  function(x){x = x[!is.na(x)];if(length(x)==0){return(NA)};max(x)}
+my_min  =  function(x){x = x[!is.na(x)];if(length(x)==0){return(NA)};min(x)}
+my_mean =  function(x){x = x[!is.na(x)];if(length(x)==0){return(NA)};mean(x)}
+my_median =  function(x){x = x[!is.na(x)];if(length(x)==0){return(NA)};median(x)}
