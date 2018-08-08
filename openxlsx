@@ -1,0 +1,8 @@
+wb <- openxlsx::createWorkbook("frequency_table.xlsx")
+openxlsx::addWorksheet(wb, "sheet_1"  )
+openxlsx::writeData(wb, 1, one_columns)
+
+openxlsx::addWorksheet(wb, "sheet_2"  )
+openxlsx::writeData(wb, 2, one_columns)
+
+openxlsx::saveWorkbook(wb, file = "frequency_table.xlsx")
